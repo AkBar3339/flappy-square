@@ -72,6 +72,11 @@ function Square() {
                     walls[i].speed = 0;
                 }
                 txt1 = "Game over! Press spacebar to try again."
+                if (!sSlapPlayed) {
+                    sSlap.setVolume(2);
+                    sSlap.play();
+                    sSlapPlayed = true;
+                }
             }
         }
     }

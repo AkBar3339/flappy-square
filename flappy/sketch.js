@@ -12,7 +12,9 @@ var chckbx3;
 var sPoint;
 var sHit;
 var sFlap;
+var sSlap;
 var sHitPlayed = false;
+var sSlapPlayed = false;
 
 function preload() {
     var windowH = windowHeight
@@ -29,6 +31,7 @@ function preload() {
     sPoint = loadSound('assets/point.flac');
     sHit = loadSound('assets/hit.wav');
     sFlap = loadSound('assets/flap.wav');
+    sSlap = loadSound('assets/slap.wav');
 }
 
 function crW() {
@@ -164,6 +167,7 @@ function reset() {
     chckbx2.disabled = false;
     chckbx3.disabled = false;
     sHitPlayed = false;
+    sSlapPlayed = false;
     walls = [];
     square.y = height / 2;
     score = 0;
