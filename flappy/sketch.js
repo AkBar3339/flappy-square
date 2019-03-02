@@ -28,10 +28,10 @@ function preload() {
     chckbx1 = document.getElementById("ezaf");
     chckbx2 = document.getElementById("med");
     chckbx3 = document.getElementById("hard");
-    sPoint = loadSound('assets/point.flac');
-    sHit = loadSound('assets/hit.wav');
-    sFlap = loadSound('assets/flap.wav');
-    sSlap = loadSound('assets/slap.wav');
+    //sPoint = loadSound('assets/point.flac');
+    //sHit = loadSound('assets/hit.wav');
+    //sFlap = loadSound('assets/flap.wav');
+    //sSlap = loadSound('assets/slap.wav');
 }
 
 function crW() {
@@ -132,7 +132,6 @@ function keyPressed() {
 }
 
 function colorChanger() {
-    //TODO
     var wallC;
     if (score < 25) {
         square.color = color(255, 235, 59);
