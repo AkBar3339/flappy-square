@@ -8,8 +8,8 @@ function Square() {
     
     this.fly = function() {
         this.vel += this.force;
-        sFlap.setVolume(3);
-        sFlap.play();
+        //sFlap.setVolume(3);
+        //sFlap.play();
     }
     
     this.update = function() {
@@ -26,9 +26,9 @@ function Square() {
         }
         if (ended){
             if (this.y == height - 30 && !sHitPlayed) {
-                sHit.setVolume(1.5);
-                sHit.play();
-                sHitPlayed = true;
+                //sHit.setVolume(1.5);
+                //sHit.play();
+                //sHitPlayed = true;
             }
         }
     }
@@ -45,8 +45,8 @@ function Square() {
             point = collideLineRect(walls[i].posS.x + 50, 0, walls[i].posS.x + 50, height, this.x, this.y, 1, 1);
             if (point == true && !ended) {
                 score += 1;
-                sPoint.setVolume(0.2);
-                sPoint.play();
+                //sPoint.setVolume(0.2);
+                //sPoint.play();
             }
         }
         
@@ -73,9 +73,9 @@ function Square() {
                 }
                 txt1 = "Game over! Press spacebar to try again."
                 if (!sSlapPlayed) {
-                    sSlap.setVolume(2);
-                    sSlap.play();
-                    sSlapPlayed = true;
+                    //sSlap.setVolume(2);
+                    //sSlap.play();
+                    //sSlapPlayed = true;
                 }
             }
         }
